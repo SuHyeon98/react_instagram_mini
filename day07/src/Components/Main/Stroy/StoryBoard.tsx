@@ -1,5 +1,5 @@
-import Story from "./Story";
-import { StoryNameProps } from "./StroyName";
+import Story from './Story';
+import { StoryNameProps } from './StroyName';
 
 type StoryBoardProps = {
   data: StoryNameProps[];
@@ -7,7 +7,7 @@ type StoryBoardProps = {
 
 const StoryBoard = ({ data }: StoryBoardProps) => {
   return (
-    <div className="flex items-center gap-2 mt-2 overflow-x-scroll">
+    <div className="flex items-center gap-2 overflow-x-scroll">
       {data.map((v) => (
         <Story {...v} />
       ))}

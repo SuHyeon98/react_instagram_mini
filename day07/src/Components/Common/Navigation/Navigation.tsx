@@ -1,11 +1,12 @@
-import { MdHomeFilled } from "react-icons/md";
-import { IoSearch } from "react-icons/io5";
-import { CiHeart } from "react-icons/ci";
-import { FaRegCircle } from "react-icons/fa";
-import { CiSquarePlus } from "react-icons/ci";
-import { colors } from "../../../Styles/color";
-import { sizes } from "../../../Styles/sizes";
-import LinkIcon from "../Icon/LinkIcon";
+import { MdHomeFilled } from 'react-icons/md';
+import { IoSearch } from 'react-icons/io5';
+import { CiHeart } from 'react-icons/ci';
+import { FaRegCircle } from 'react-icons/fa';
+import { CiSquarePlus } from 'react-icons/ci';
+import { colors } from '../../../Styles/color';
+import { sizes } from '../../../Styles/sizes';
+import LinkIcon from '../Icon/LinkIcon';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -17,13 +18,23 @@ const Navigation = () => {
           height: sizes.height.lg,
           borderTop: colors.border.line,
         }}
-        className="w-screen max-w-sm flex justify-around items-center"
+        className="w-screen max-w-md flex justify-around items-center"
       >
-        <LinkIcon pageUrl="/" iconTag={<MdHomeFilled />} />
-        <LinkIcon pageUrl="/Search" iconTag={<IoSearch />} />
-        <LinkIcon pageUrl="/Plus" iconTag={<CiSquarePlus />} />
-        <LinkIcon pageUrl="/Like" iconTag={<CiHeart />} />
-        <LinkIcon pageUrl="/Mypage" iconTag={<FaRegCircle />} />
+        <Link to={'/'}>
+          <MdHomeFilled />
+        </Link>
+        <Link to={'/Search'}>
+          <IoSearch />
+        </Link>
+        <Link to={'/Plus'}>
+          <CiSquarePlus />
+        </Link>
+        <Link to={'/Like'}>
+          <CiHeart />
+        </Link>
+        <Link to={'/Mypage'}>
+          <FaRegCircle />
+        </Link>
       </div>
     </footer>
   );

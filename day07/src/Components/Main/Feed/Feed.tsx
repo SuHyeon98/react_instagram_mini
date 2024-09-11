@@ -1,10 +1,9 @@
-import FeedContents, { FeedContentsProps } from "./FeedContents/FeedContents";
-import FeedContetns from "./FeedContents/FeedContents";
-import FeedInteraction from "./FeedInteraction/FeedInteraction";
+import FeedContents, { FeedContentsProps } from './FeedContents/FeedContents';
+import FeedInteraction from './FeedInteraction/FeedInteraction';
 import FeedSwiperImages, {
   FeedSwiperImagesProps,
-} from "./FeedSwiperImages/FeedSwiperImages";
-import FeedTop, { FeedTopProps } from "./FeedTop/FeedTop";
+} from './FeedSwiperImages/FeedSwiperImages';
+import FeedTop, { FeedTopProps } from './FeedTop/FeedTop';
 
 export type FeedProps = {
   FeedTopProps: FeedTopProps;
