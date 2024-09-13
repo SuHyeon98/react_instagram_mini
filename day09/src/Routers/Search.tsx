@@ -1,20 +1,20 @@
-import { useState } from "react";
-import SearchBar from "../Components/Search/SearchBar";
-import SearchBoard from "../Components/Search/SearchCategory/SearchBoard";
-import SearchImages from "../Components/Search/SearchImages";
+import { useState } from 'react';
+import SearchBar from '../Components/Search/SearchBar/SearchBar';
+import SearchBoard from '../Components/Search/SearchCategory/SearchBoard';
+import SearchImages from '../Components/Search/SearchCategory/SearchImages';
 
 export type Category =
-  | "Tv"
-  | "Idol"
-  | "Music"
-  | "City"
-  | "Game"
-  | "News"
-  | "Travel"
-  | "ALL";
+  | 'Tv'
+  | 'Idol'
+  | 'Music'
+  | 'City'
+  | 'Game'
+  | 'News'
+  | 'Travel'
+  | 'ALL';
 
 const Search = () => {
-  const [category, setCategory] = useState<Category>("ALL");
+  const [category, setCategory] = useState<Category>('ALL');
   const changeCategory = (data: Category) => setCategory((prev) => data);
 
   return (

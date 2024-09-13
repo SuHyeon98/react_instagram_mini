@@ -1,14 +1,16 @@
-import SearchBoardText, { SearchBoardTextProps } from "./SearchBoardText";
+import SearchBoardText from './SearchBoardText';
+import { categoryButtons } from '../../Constants/category';
+import { Category } from '../../../Routers/Search';
 
-export type StoryBoardProps = {
-  data: SearchBoardTextProps[];
+type StoryBoardProps = {
+  onClick: (e: Category) => void;
 };
 
-const SearchBoard = ({ data }: StoryBoardProps) => {
+const SearchBoard = ({ onClick }: StoryBoardProps) => {
   return (
     <div className="flex w-full max-w-md items-center gap-2 overflow-x-scroll">
-      {data.map((v) => (
-        <SearchBoardText {...v} />
+      {categoryButtons.map((v) => (
+        <SearchBoardText {...v} onClick={() => onClick(v.category)} />
       ))}
     </div>
   );
