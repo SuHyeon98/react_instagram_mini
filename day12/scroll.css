@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.text1 {
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text2 {
+  display: none;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text3 {
+  display: none;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: slateblue;
+}
+
+.test {
+  margin-top: 300px;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+} */
